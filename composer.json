@@ -1,0 +1,16 @@
+{
+  "name": "kulturdesign/kd_lightning_custom",
+  "description": "KulturDesign Customizations for the Lightning Distribution",
+  "minimum-stability": "dev",
+  "license": "GPL-2.0+",
+  "type": "drupal-project",
+  "authors": [
+    {
+      "name": "Michael Barz",
+      "email": "michael.barz@zeitgestalten.eu"
+    }
+  ],
+  "require": {
+    "cebe/markdown": "1.1.0"
+  }
+}

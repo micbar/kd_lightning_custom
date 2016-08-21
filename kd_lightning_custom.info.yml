@@ -1,0 +1,5 @@
+name: KulturDesign Lightning Customization
+type: module
+description: 'Extends and customizes the Lightning Distribution'
+core: 8.x
+package: 'Lightning'

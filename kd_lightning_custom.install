@@ -1,0 +1,22 @@
+<?php
+use Drupal\node\Entity\NodeType;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to further customize the site after Lightning has been
+ * installed. This module is automatically enabled via the lightning.extend.yml
+ * file.
+ *
+ * @see system_install()
+ */
+
+function kd_lightning_custom_install() {
+	// Enable and set kd_blueprint as default theme
+	//\Drupal::service('theme_installer')->install(array('kd_blueprint'), TRUE);
+	//\Drupal::configFactory()->getEditable('system.theme')->set('default', 'kd_blueprint')->save(TRUE);
+
+	// Delete the content types that ship with lightning
+	NodeType::load('landing_page')->delete();
+	//NodeType::load('page')->delete();
+}
