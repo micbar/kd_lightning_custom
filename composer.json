@@ -3,7 +3,7 @@
   "description": "KulturDesign Customizations for the Lightning Distribution",
   "minimum-stability": "dev",
   "license": "GPL-2.0+",
-  "type": "drupal-project",
+  "type": "drupal-module",
   "authors": [
     {
       "name": "Michael Barz",
@@ -11,6 +11,6 @@
     }
   ],
   "require": {
-    "cebe/markdown": "1.1.0"
+    "cebe/markdown": "^1.1.0"
   }
 }
