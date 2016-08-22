@@ -1,0 +1,69 @@
+uuid: 77249b82-92da-4996-b8bb-4af38c643e74
+langcode: de
+status: true
+dependencies:
+  module:
+    - lightning_media
+    - media_entity_document
+    - media_entity_image
+    - views
+_core:
+  default_config_hash: 4R_tMs5BqB1OzvDPlNCnTQ1jASP44INz8gXJphjMokc
+name: media_browser
+label: 'Media Browser'
+display: modal
+display_configuration:
+  path: /media-browser
+  width: ''
+  height: '640'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  134808d9-d854-4a0b-8699-d5eba006b8b7:
+    settings:
+      view: media
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+    uuid: 134808d9-d854-4a0b-8699-d5eba006b8b7
+    weight: -10
+    label: Bibliothek
+    id: view
+  8b142f33-59d1-47b1-9e3a-4ae85d8376fa:
+    settings:
+      submit_text: 'Select entities'
+    uuid: 8b142f33-59d1-47b1-9e3a-4ae85d8376fa
+    weight: -8
+    label: 'Create Embed'
+    id: embed_code
+  044d2af7-314b-4830-8b6d-64896bbb861e:
+    settings:
+      submit_text: 'Select entities'
+      return_file: 0
+    uuid: 044d2af7-314b-4830-8b6d-64896bbb861e
+    weight: -9
+    label: 'Dateien Hochladen'
+    id: file_upload
+  0c4d750e-b671-49a3-b388-bd10734d7e72:
+    settings:
+      extensions: 'txt pdf doc docx odt'
+      media_bundle: document
+      upload_location: 'public://documents'
+      submit_text: 'Select documents'
+    uuid: 0c4d750e-b671-49a3-b388-bd10734d7e72
+    weight: 4
+    label: 'Create Document'
+    id: media_entity_document_upload
+  e7a648e4-69f5-4c1c-a0bc-6d0fe7488046:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_bundle: image
+      upload_location: 'public://images'
+      submit_text: 'Select images'
+    uuid: e7a648e4-69f5-4c1c-a0bc-6d0fe7488046
+    weight: 5
+    label: 'Bilder hochladen'
+    id: media_entity_image_upload
