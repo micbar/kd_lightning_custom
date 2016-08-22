@@ -8,7 +8,7 @@
 namespace Drupal\kd_lightning_custom\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use cebe\Markdown\GithubMarkdown;
+use cebe\markdown\GithubMarkdown;
 
 /**
  * Class KulturDesign.

@@ -3,6 +3,6 @@ kd_lightning_custom.kultur_design_welcome:
   path: '/kd-lightning-install-complete'
   defaults:
     _controller: '\Drupal\kd_lightning_custom\Controller\KulturDesign::welcome'
-    _title: 'Welcome to lightning and KulturDesdign!'
+    _title: 'Welcome to lightning and KulturDesign!'
   requirements:
     _permission: 'access content'
