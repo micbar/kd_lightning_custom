@@ -16,7 +16,12 @@ function kd_lightning_custom_install() {
 	//\Drupal::service('theme_installer')->install(array('kd_blueprint'), TRUE);
 	//\Drupal::configFactory()->getEditable('system.theme')->set('default', 'kd_blueprint')->save(TRUE);
 
-	// Delete the content types that ship with lightning
+	// Delete the landing page content type that ship with lightning
 	NodeType::load('landing_page')->delete();
-	//NodeType::load('page')->delete();
+
+	// Delete the media browser, the embed button and the rich text format
+	\Drupal::configFactory()->getEditable("entity_browser.browser.media_browser")->delete();
+	\Drupal::configFactory()->getEditable("editor.editor.rich_text")->delete();
+	\Drupal::configFactory()->getEditable("filter.format.rich_text")->delete();
+	\Drupal::configFactory()->getEditable("embed.button.media_browser")->delete();
 }
