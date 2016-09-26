@@ -3,3 +3,8 @@ type: module
 description: 'Extends and customizes the Lightning Distribution'
 core: 8.x
 package: 'Lightning'
+config_devel:
+  - field.field.paragraph.kd_text.field_kd_text
+  - field.field.paragraph.kd_mehrere_spalten.field_kd_inhaltselemente
+  - paragraphs.paragraphs_type.kd_mehrere_spalten
+  - paragraphs.paragraphs_type.kd_text
